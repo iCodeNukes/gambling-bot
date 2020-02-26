@@ -88,7 +88,7 @@ namespace gambling_bot
 
             //Loading and other initialization here, while the bot connects
 
-            //Subscribe to CommandReceivedEvent here
+            CommandReceived += Coinflip.Run;
 
             connectionTask.Wait(10000); //Wait until asynchronous execution completes, with a timeout of 10 seconds
 
